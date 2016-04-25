@@ -23,6 +23,8 @@
 
 let fs = require('fs');
 let WarmUp = require('./WarmUp').WarmUp;
+let PlotData = require('./PlotData').PlotData;
+let ComputeCost = require('./ComputeCost').ComputeCost;
 
 console.log('Running warmUpExercise....\n');
 console.log('5x5 Identity Matrix: \n');
@@ -42,3 +44,17 @@ file.split('\n').forEach((line) => {
   y.push(a[1]);
 });
 let m = y.length;
+
+PlotData(X, y);
+
+console.log('Program paused. Press enter to continue.\n');
+console.log('Running Gradient Descent...\n');
+
+X = X.map((i) => [1, i]);
+let theta = [0, 0];
+let iterations = 100;
+let alpha = 0.01;
+
+ComputeCost(X, y, theta);
+
+
