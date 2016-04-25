@@ -1,0 +1,14 @@
+{
+  "name": "01_linear_regression",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ComputeCost.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "function-graph": "^0.1.2"
+  }
+}

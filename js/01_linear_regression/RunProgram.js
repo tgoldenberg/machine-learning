@@ -27,7 +27,7 @@ let WarmUp = require('./WarmUp').WarmUp;
 console.log('Running warmUpExercise....\n');
 console.log('5x5 Identity Matrix: \n');
 
-WarmUp();
+WarmUp(5);
 
 console.log('Program paused. Press enter to continue.\n');
 
@@ -41,4 +41,4 @@ file.split('\n').forEach((line) => {
   X.push(a[0]);
   y.push(a[1]);
 });
-console.log('X, y', X, y);
+let m = y.length;
