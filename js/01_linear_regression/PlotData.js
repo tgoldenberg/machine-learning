@@ -18,6 +18,4 @@ let PlotData = (X, y) => {
   console.log(graph.toString());
 };
 
-module.exports = {
-  PlotData,
-};
+module.exports = PlotData;

@@ -11,6 +11,4 @@ let WarmUp = (N) => {
   console.log(eye(N));
 };
 
-module.exports = {
-  WarmUp,
-};
+module.exports = WarmUp;

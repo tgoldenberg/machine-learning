@@ -23,6 +23,4 @@ let ComputeCost = (X, y, theta) => {
   return J;
 };
 
-module.exports = {
-  ComputeCost,
-};
+module.exports = ComputeCost;

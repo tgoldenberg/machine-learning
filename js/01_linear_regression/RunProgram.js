@@ -22,9 +22,10 @@
  */
 
 let fs = require('fs');
-let WarmUp = require('./WarmUp').WarmUp;
-let PlotData = require('./PlotData').PlotData;
-let ComputeCost = require('./ComputeCost').ComputeCost;
+let WarmUp = require('./WarmUp');
+let PlotData = require('./PlotData');
+let ComputeCost = require('./ComputeCost');
+let GradientDescent = require('./GradientDescent');
 
 console.log('Running warmUpExercise....\n');
 console.log('5x5 Identity Matrix: \n');
@@ -57,4 +58,8 @@ let alpha = 0.01;
 
 ComputeCost(X, y, theta);
 
+theta = GradientDescent(X, y, theta, alpha, iterations);
+
+console.log('Theta found by gradient descent: ');
+console.log('THETA', theta);
 
