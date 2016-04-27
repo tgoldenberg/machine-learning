@@ -19,7 +19,6 @@ let ComputeCost = (X, y, theta) => {
     cost += n;
   }
   J = norm * cost;
-  console.log('J', norm, cost, J);
   return J;
 };
 

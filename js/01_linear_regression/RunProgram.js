@@ -24,6 +24,7 @@
 let fs = require('fs');
 let WarmUp = require('./WarmUp');
 let PlotData = require('./PlotData');
+let PlotLineGraph = require('./PlotLineGraph');
 let ComputeCost = require('./ComputeCost');
 let GradientDescent = require('./GradientDescent');
 
@@ -62,4 +63,12 @@ theta = GradientDescent(X, y, theta, alpha, iterations);
 
 console.log('Theta found by gradient descent: ');
 console.log('THETA', theta);
+
+PlotLineGraph(theta);
+/* TODO:
+ * 1. Plot line graph of regression
+ * 2. Plot 2D grid of gradient descent
+ * 3. Print prediction for given parameters
+ */
+
 
