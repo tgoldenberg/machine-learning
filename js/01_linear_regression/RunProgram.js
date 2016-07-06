@@ -70,5 +70,3 @@ PlotLineGraph(theta);
  * 2. Plot 2D grid of gradient descent
  * 3. Print prediction for given parameters
  */
-
-

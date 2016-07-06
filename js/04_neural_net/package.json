@@ -1,0 +1,16 @@
+{
+  "name": "04_neural_net",
+  "version": "1.0.0",
+  "description": "",
+  "main": "RunProgram.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsonfile": "^2.3.1",
+    "mathjs": "^3.3.0",
+    "sigmoid": "0.0.1"
+  }
+}
